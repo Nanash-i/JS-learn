@@ -98,3 +98,33 @@
 //    console.log("fail");
 // }
 
+// computers ka purpose hai to kaam kanra bina galti ke in efficeint way matlab LOOPS
+// for(start;end;change){}
+// for(let i=10;i<=100;i=i+5){
+//     console.log(i);
+// }
+
+// foreach-tab use kar saktey hain jab ek array hoo
+// forEach loop me har member par ek baar chaalta hai
+// foreach hamesha function acc karta hai
+// var arr=[];
+// for(let i=1;i<100;i++){
+//     arr[i]=i+2;
+// }
+// arr.forEach(function(val){
+//     console.log(val);
+// })
+
+// map ka use tabb karna hai jab ek array meii koi calculation karkryy and us nayee calculated values to dusre ek naya array me store karna hoo
+// Must always have return
+// let arr=[1,2,3,4,5,6];
+// let newarr=arr.map(function(val){
+//     return val*100
+// })
+
+// jab ek array ho aur uskey har memeber par jaana hai and use koi member ko place karna hai and koi ko nahi in new array toh we use FILTER
+// filter condition ko based karke agr true ho toh value placed in new array nahi toh not placed
+// let arr=[1,2,3,4,6,4,35,24,2325,45,5,44,124,35,45,36,6,77,4,324,26,56,544,324,32,54,65,6,56,42,4,245,5465,,45,32,32,56,56,55,425,43,4,34,3,24,4,43,23,2];
+// let newarr=arr.filter(function(val){
+//     return /*place a condition*/ val>20;
+// })
