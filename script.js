@@ -19,13 +19,13 @@
 // abcde();
 
 // var a=10; window object me joined
-// let b=10; window object me no joined 
+// let b=10; window object me no joined
 // ---------------------------------------
 
 // CONSTANTS
 // const a=10;
 // let b=10;
-  
+
 // Types in JS
 // primitive
 // let a=10;
@@ -47,15 +47,13 @@
 // Else-if to make more conditions
 // 12>3?console.log(""):console.log("");
 
-
 // ||
 // 12>3||null  ---> return true kyoki 12>3 agar yeh fasle hoto toh null ataa
 // ""||"paise" ---> return paise kyoki phela condition faslsy haiii
 
-
-// user se number mang ke agar number 10 se upar ho toh print Hello nahitoh Hey     #problem1 
+// user se number mang ke agar number 10 se upar ho toh print Hello nahitoh Hey     #problem1
 // let number=prompt("enter any number:")
-// number>10?console.log("hello"):console.log("hey") 
+// number>10?console.log("hello"):console.log("hey")
 
 // user se number maango and usem 10 add karo and add karne pey 20 sey jaadaa hoh toh bolu Hello nahi toh Hey
 // #problem2
@@ -65,8 +63,8 @@
 
 // user se number maango do baar and dono ko add karo and agar dusre number ki aakhri digit us added number se choti hai to print karo hello
 // #problem3
-// let number1 =Number(prompt("enter number1")); 
-// let number2 =Number(prompt("enter number2"));  
+// let number1 =Number(prompt("enter number1"));
+// let number2 =Number(prompt("enter number2"));
 // let add=number1+number2;
 // number2%10<add?console.log("hello"):null;
 
@@ -77,7 +75,7 @@
 // pass1===pass2?console.log("Login"):console.log("Nahi allow");
 
 //user se number maango and check karo ki woh even hai yaa odd
-// #problem5 
+// #problem5
 // let num=Number(prompt("enter Number:"));
 // num%2===0?console.log("Even"):console.log("Odd");
 
@@ -128,3 +126,68 @@
 // let newarr=arr.filter(function(val){
 //     return /*place a condition*/ val>20;
 // })
+
+// Reduce
+// let arr=[];
+// for(let i=1;i<=5;i++){
+//      arr[i-1]=i
+// }
+// var output =arr.reduce(function(acc,val){
+//     return acc=acc+val
+// },15)
+// console.log(output)
+
+//  Objects
+// let obj = {
+//   name: "Pravee",
+//   age: 20,
+//   single: true,
+//   sayName: (name) => {
+//     console.log(obj.name);
+//   },
+// };
+
+// // everything in js is an object
+// console.log();
+// obj.sayName("harish");
+// console.count(obj);
+// let car={
+//     make:"India",
+//     model:"Mustang",
+//     year:2023,
+//     color:"black"
+// };
+// let abc=()=>{
+//     console.log(car.make);
+//     console.log(car.color);
+//     console.log(car.model);
+//     console.log(car.year);
+
+// }
+// abc()
+// let students = {
+//   student1: {
+//     name: "Nitish",
+//     age: null,
+//     grade: "A",
+//   },
+//   student2: {
+//     name: "Praveen",
+//     age: null,
+//     grade: "A+",
+//   },
+//   studentage: function (age1, age2) {
+//     this.student1.age = age1;
+//     this.student2.age = age2;
+//   },
+//   studentAgeComparison: function () {
+//     let a = this.student1.age;
+//     let b = this.student2.age;
+//     a > b ? console.log(this.student1.name) : console.log(this.student2.name);
+//   },
+// };
+
+// let age1=Number(prompt("enter student1 age:"));
+// let age2=Number(prompt("enter student2 age:"));
+// students.studentage(age1,age2);
+// students.studentAgeComparison();
