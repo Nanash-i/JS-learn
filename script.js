@@ -177,7 +177,7 @@
 //     grade: "A+",
 //   },
 //   studentage: function (age1, age2) {
-//     this.student1.age = age1;
+//     this.student1.age = a ge1;
 //     this.student2.age = age2;
 //   },
 //   studentAgeComparison: function () {
@@ -191,3 +191,144 @@
 // let age2=Number(prompt("enter student2 age:"));
 // students.studentage(age1,age2);
 // students.studentAgeComparison();
+
+
+// First class function-jab function ko variable mey store kar sakte and function ko arguments ki tarah use karte sakte hai
+// function a(val){
+//   val();
+// }
+//  a(()=>console.log("This is first"))
+// or
+// value=()=>{
+//     console.log("this is first")
+// }
+// a(value)
+
+// constructor ek sache ki tarah hai jissey kayi objects ban sakte hai 
+// jab bhi new keyword likho to ek blank object maan mey bana lo and new ke aagey ka function chaloo and us function mey jaha bhi this ho uskey aagaeyy ke value ko property ki tarah and set value ko atribute bana lo blank object mey
+// function abcd(name,age){
+//     this.name=name;
+//     this.age=age;
+// }
+// let ans1= new abcd("praveen",20);
+// let ans2=new abcd("harsh",24);
+
+
+// hoisting-var and fun ko declaration se phele caal karne par var:undefined and functon:pura code of function.
+// js code run karne se phele execution context banata hai and usemy memory and code allocation karte hai line by line
+// console.log(a)
+// ab();
+
+// var a=13;
+// function ab(){
+//   console.log("a function")
+// };
+
+// copying reference variable
+// let arr1=[1,2,3,4,34,2,2]
+// let arr2=[...arr1];
+// arr1.unshift(123);
+// arr2.pop();
+// console.log(arr1);
+// console.log(arr2);
+// let obj1={
+//   name:"praveen",
+//   age:20
+// }
+// let obj2={...obj1};
+// console.log(obj2.name="harsh")
+// console.log(obj1.name)
+
+// Function
+// ________________________________________
+// function statement and declaration are same -means normal way of function creatiion
+// function a(){
+//     console.log("a")
+// }
+// a();
+// // function expression is another way of craeting function through assigning through variables
+// let b=function (){
+//     console.log("as")
+// }
+// b();
+// dono mey diiference hoisting ka hota hai
+
+// Anonymous function maney jis function ka naam na ho .asey function sirf function expression ke saath kaam kar sakte hai but function statemnt ke saath nahi
+// let b=function(){
+//     console.log("B called")
+// }
+// // Named Function expression is same like function expression way but with a function name like
+// let b=function xyz(){
+//     console.log(xyz);
+// }
+// b() run karney par error milega as xyz() is accesible srif inside that function
+
+
+// function x(yfunc){
+//     console.log("x");
+//     yfunc();
+// }
+// x(function y(){
+//     console.log("y");//this function which is called inside a function is known as CaLlback function
+// });
+// setTimeout(function(){
+//     console.log("Settimeout")
+// },10000);
+// Callback function helps us to achieve async js
+
+// Closure with event listener
+// function eventListener(){
+//     let count=0;
+//     document.getElementById("click").addEventListener("click",function xyz(){
+//         console.log("button Clicked",++count)
+//     });
+// the addEventListener() is attaced=closure to count variable which takes memory even whan code not running   
+// }
+// eventListener();
+// // console.log(count) this give error as count is closure to its parent eventListener function
+
+// Higher order function woh hotey hai jo ek callback function kon accept kare or return kare koi function
+ 
+// Constructor function woh hai jab normal function mein THIS keyword ka use kiya hai and function call par NEW keyword ka saath kiya hai.
+// function conFunc(color,width,height) {
+//     this.color=color;
+//     this.height=height;
+//     this.width=width;
+// };
+// let ele1=new conFunc("red",20,30);
+// let ele2=new conFunc("blue",233,3033);
+
+
+// iife -immediately invoked function expression hota hai jinme var private hote
+// used for larger codebase to encapsulation
+// let ans=(function(){
+//     let a=12;
+//     return {
+//         getter:function(){
+//             console.log(a);
+//         },
+//         setter:function(val){
+//              a=val
+//         }
+//     }
+// })();
+// // let as=ans();
+
+
+// Prototype-js mein har ek object ko ek extra propert by default miltii hai as prototype
+// prototypal inheritance maneey dusre object ki properties apne object mein borrow/inherit karne
+// let human={
+//     hasName:true,
+//     canFly:false,
+//     canTalk:true,
+//     willDie:true
+// };
+
+// let me={
+//     isFit:true,
+//     isWealthy:true
+// }
+
+// me.__proto__=human
+
+
